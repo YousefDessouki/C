@@ -1,3 +1,6 @@
+
+///this code is to reverse a number in C
+
 #include <stdio.h>
 #include <math.h>
 int main() {
