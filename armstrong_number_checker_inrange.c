@@ -77,3 +77,27 @@ int armstrongnumberchcekerrange(int lowerlimit, int upperlimit)
     return numberofarmstrongnumbers;
 
 }
+
+
+
+int prime_checker_range(int lowerlimit, int upperlimit)
+{
+    int max,min;
+    max=(lowerlimit>upperlimit)?lowerlimit:upperlimit;
+    min=(lowerlimit<upperlimit)?lowerlimit:upperlimit;
+    int counter=0;
+    for(int i=min;i<max;i++)
+    {
+        if(prime_checker(i))
+        {
+            counter++;
+            printf("%d,",i);
+        }
+
+        
+
+    }
+    printf("\n");
+    printf("The range contains %d prime numbers",counter);
+    return counter;
+}
